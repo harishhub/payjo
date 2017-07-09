@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src ="javascripts/index.js"></script>
+</head>
+<body>
+    <div class="addProduct">
+        <a href="http://localhost:3000/add-product"><button>Add Product</button></a>
+    </div>
+    <div>
+        <table id="products">
+            <tr>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Quantity</th>
+                <th>Expiry</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        button{
+            border: 1px solid #dddddd;
+            padding: 8px;
+            margin-right: 10px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .addProduct{
+            margin-bottom: 20px;
+        }
+
+        .default{
+            background-color: #8de18d;
+        }
+
+        .lessThanThirty{
+            background-color: #f5af46;
+        }
+
+        .lessThanTen{
+            background-color: #f54646;
+        }
+    </style>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src ="javascripts/addproduct.js"></script>
+  		
+		<script type="text/javascript">
+			$( function() {
+			    $( "#datepicker" ).datepicker();
+			});
+		</script>
+	</head>
+	<body>
+
+		<div>
+			<form onsubmit="return false" id="product">
+				Product Name: <br>
+				<input type="text" name="name">
+				<br><br>
+				Product Code : <br>
+				<input type="text" name="code">
+				<br><br>
+				Quantity:<br>
+				<input type="text" name="quantity">
+				<br><br>
+				Expiry Date:<br>
+				<input type="text" name="expiry" id="datepicker">
+				<br><br>
+				<input type="submit" class="submit" value="Save product" id="save">
+			</form>
+		</div>
+		 
+
+		<p>Click to save product</p>
+		<a href="http://localhost:3000"><button>List All Products</button></a>
+	</body>
+
+	<style type="text/css">
+			
+		input,button{
+			border: 1px solid #dddddd;
+	    	padding: 8px;
+			margin-right: 400px
+		}
+
+		.submit:hover {
+		    cursor: pointer;
+		}
+
+		.submit:active{
+			background-color: #6ad1c9;
+		}
+	</style>
+</html>
