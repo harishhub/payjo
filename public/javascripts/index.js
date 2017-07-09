@@ -81,26 +81,24 @@ $(document).ready(function(){
             data: updateProduct,
             complete: function(xhr, statusText) {
 
-                /*if(xhr.status == 500) {
+                if(xhr.status != 200) {
                     alert(xhr.responseJSON.status)
                 }
 
                 if(xhr.status == 200) {
-                   alert(xhr.responseJSON.status);
-                }*/
-
-                
-                if(updateProduct.quantity < 30){
+                   
+                	if(updateProduct.quantity < 30){
 					
-					if(updateProduct.quantity < 30 && updateProduct.quantity >= 10){
-						$("#"+id).attr("class","lessThanThirty");		
+						if(updateProduct.quantity < 30 && updateProduct.quantity >= 10){
+							$("#"+id).attr("class","lessThanThirty");		
+						}else{
+							$("#"+id).attr("class","lessThanTen");
+						} 
 					}else{
-						$("#"+id).attr("class","lessThanTen");
-					} 
-				}else{
-					$("#"+id).attr("class","default");	
-				}
-            }
+						$("#"+id).attr("class","default");	
+					}
+                }
+			}
         });
 	});
 	
@@ -117,14 +115,10 @@ $(document).ready(function(){
             complete: function(xhr, statusText) {
 
 
-                /*if(xhr.status == 500) {
+                if(xhr.status != 200) {
                     alert(xhr.responseJSON.status)
                 }
-
-                if(xhr.status == 200) {
-                   alert(xhr.responseJSON.status);
-                }*/
-            }
+			}
         });
 	});
 });
