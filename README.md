@@ -9,6 +9,7 @@
 
  * Node LTS version(6.11.0) 
  * MongoDB 3.4.4
+ * Jquery and jquery UI
  
  
 ### How do I get set up? ###
@@ -16,6 +17,7 @@
     * Run `npm install` 
     * Run `npm start` server will start on port 3000. (note if u want to run the app as a deamon then u can npm install PM2 and start the app)
     * A database with name payjoApp will be created in mongoDb.
+    * Please make sure u have internet access before accessing the app, I am loading Jquery via CDN.
     * Go to browser and access localhost:3000.
     
 ### Restrictions
