@@ -27,7 +27,7 @@
 ### Language/Platform Used ### 
       *  Node.js
       *  Express.js
-      *  MongDB
+      *  MongoDB
 
          
  ### EndPoints
