@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const index = require('./routes/index');
 const product = require('./routes/product');
 
-mongoose.connect('mongodb://localhost/payjo')
+mongoose.connect('mongodb://localhost/payjoApp')
 	.then(() => {
 		console.log("database connected")
 	})

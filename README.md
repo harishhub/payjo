@@ -15,8 +15,12 @@
     * Clone Repo.
     * Run `npm install` 
     * Run `npm start` server will start on port 3000. (note if u want to run the app as a deamon then u can npm install PM2 and start the app)
+    * A database with name payjoApp will be created in mongoDb.
     * Go to browser and access localhost:3000.
     
+### Restrictions
+    * Duplicate products can't be added ,the product name is being checked for uniqness.
+
 
 ### Language/Platform Used ### 
       *  Node.js
@@ -26,7 +30,8 @@
          
  ### EndPoints
   ### API's
-      *   /api/product  ( REST API's For Handling CRUD )     
+      *   /api/product  ( REST API's For Handling CRUD )    
+      
               
 ### Who do I talk to? ###
 
